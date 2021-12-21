@@ -47,6 +47,7 @@ let NERDTreeWinSize=31
 let NERDTreeChDirMode=2 "make sure working directory is set correctly
 let g:NERDTreeShowHidden=1
 let g:ctrlp_working_path_mode = 0 "set search dir to current instead of project root for ctrlp.Initially was 'rw' (with those single quotes)
+let g:ctrlp_show_hidden = 1 "find hidden files as well
 "set focus to editor buffer instead of NERDTree when vim starts up.
 autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
 
