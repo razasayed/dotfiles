@@ -1,4 +1,6 @@
 set nocompatible              " be iMproved, required
+set hidden
+set guifont=Menlo:h14
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -18,7 +20,6 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ryanss/vim-hackernews'
 Plugin 'duff/vim-scratch'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-endwise'
@@ -33,6 +34,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/syntastic' "To add linting support. For JS linting install jshint using 'npm install -g jshint'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+Plugin 'joshdick/onedark.vim'
 
 let g:syntastic_check_on_open=1
 
@@ -96,7 +98,8 @@ let g:rspec_runner = 'os_x_iterm'
 "set background=dark
 "colorscheme solarized
 " colorscheme railscasts "http://www.vim.org/scripts/script.php?script_id=2536
-colorscheme molokai
+" colorscheme molokai
+colorscheme onedark
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
